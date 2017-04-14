@@ -29,25 +29,26 @@
 	
 	<main>
 		<div class="container">
-			<div>
-			Стоимость
-			</div>
-			<div>
-			сортировать
-			</div>
-			<div>
-				<ul>
-				<li>по цене</li>
-				<li>по типу</li>
-				<li>по названию</li>
-				</ul>
-			</div>
+			<div class="sort-nav">
+				<div>
+					Стоимость
+				</div>
+				<div>
+					сортировать
+				</div>
+				<div>
+					<ul>
+					<li>по цене</li>
+					<li>по типу</li>
+					<li>по названию</li>
+					</ul>
+				</div>
+			</div>	
 			<div class="column-left">
-			
-				<form action="" method="">
+				<form action="" method="" oninput="priceoutput.value=pricecount.value">
 				
-					<input type="range" name="" min="1000" max="15000" step="1000">
-					<output name="">15000</output><br>
+					<input input type="range" id="pricecount" name="pricecount" min="0" max="15000" step="1000">
+					<output name="priceoutput"></output><br>
 					<b>Сетка</b><br>
 					<input type="radio">Адаптивная<br>
 					<input type="radio">Фиксированная<br>
@@ -80,7 +81,12 @@
 				<div>
 					<img src="#">
 				</div>
-				
+			</div>
+			<div class="paginator">
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#3">3</a>
+				<a href="#next">Следующая</a>
 			</div>
 		</div>
 	</main>
