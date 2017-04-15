@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Дмитрий Гуров](https://up.htmlacademy.ru/htmlcss/17/user/383165).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
