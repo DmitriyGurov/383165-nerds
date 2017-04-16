@@ -1,119 +1,142 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
+	<title>HTML Academy: Нёрдс</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+</head>
 <body>
 	<header>
 		<div class="container">
-			<div class="logo-header">
-				<img src="#" alt="logo">
-			</div>
-			<nav class="nav-header">
-				<ul>
-					<li>Студия</li>
-					<li>Клиенты</li>
-					<li>Магазин</li>
-					<li>Контакты</li>
-				</ul>
-			</nav>
-			<div class="basket-header">
-				<a href="#">Корзина</a>
+			<div class="top-header clearfix">
+				<div class="logo-header">
+					<a href="#"><img src="img/nerds-logo.png" alt="logo"></a>
+				</div>
+				<nav class="nav-header">
+					<ul>
+						<li><a href="#">Студия</a></li>
+						<li><a href="#">Клиенты</a></li>
+						<li><a href="#">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#" class="cart-header">Корзина</a></li>
+					</ul>
+				</nav>
 			</div>
 			<div class="promo-catalog">
 				<h1>Магазин готовых шаблонов</h1>
 			</div>
-		</div>	
+		</div>
 	</header>
-	
 	<main>
-		<div class="container">
+		<div class="container clearfix">
 			<div class="sort-nav">
-				<div>
-					Стоимость
-				</div>
-				<div>
-					сортировать
-				</div>
-				<div>
-					<ul>
-					<li>по цене</li>
-					<li>по типу</li>
-					<li>по названию</li>
-					</ul>
-				</div>
+				<ul class="sort-list">
+					<li>Стоимость:</li>
+					<li>Cортировать:</li>
+					<li><a href="#">по цене</a></li>
+					<li><a href="#">по типу</a></li>
+					<li><a href="#">по названию</a></li>
+					<li><a href="#"><span></span></a></li>
+					<li><a href="#"><span></span></a></li>
+				</ul>
 			</div>	
 			<div class="column-left">
-				<form action="" method="" oninput="priceoutput.value=pricecount.value">
-				
-					<input input type="range" id="pricecount" name="pricecount" min="0" max="15000" step="1000">
-					<output name="priceoutput"></output><br>
-					<b>Сетка</b><br>
-					<input type="radio">Адаптивная<br>
-					<input type="radio">Фиксированная<br>
-					<input type="radio">Резиновая<br>
-					<b>Особенности</b><br>
-					<input type="checkbox" checked>Слайдер<br>
-					<input type="checkbox">Блок преимуществ<br>
-					<input type="checkbox" checked>Новости<br>
-					<input type="checkbox">Галерея<br>
-					<input type="checkbox">Корзина<br>
+				<form action="" method="post">
+					<div class="range">
+						<span class="left-range"></span>
+						<span class="right-range"></span>
+					</div>
+					<b>Сетка</b>
+					<input type="radio" name="grid" value="adaptive" id="adaptive-field">
+					<label for="adaptive-field">
+						Адаптивная
+					</label>
+					<input type="radio" name="grid" value="fixed" id="fixed-field">
+					<label for="fixed-field">
+						Фиксированная
+					</label>
+					<input type="radio" name="grid" value="rubber" id="rubber-field">
+					<label for="rubber-field">
+						Резиновая
+					</label>
+					<b>Особенности</b>
+					<input type="checkbox" name="features" value="slider" id="slider-field" checked>
+					<label for="slider-field">
+						Слайдер
+					</label>
+					<input type="checkbox" name="features" value="advantage" id="advantage-field">
+					<label for="advantage-field">
+						Блок преимуществ
+					</label>	
+					<input type="checkbox" name="features" value="news" id="news-field" checked>
+					<label for="news-field">
+						Новости
+					</label>	
+					<input type="checkbox" name="features" value="gallery" id="gallery-field">
+					<label for="gallery-field">
+						Галерея
+					</label>	
+					<input type="checkbox" name="features" value="basket" id="basket-field">
+					<label for="basket-field">
+						Корзина
+					</label>	
 					<input type="submit" value="Показать">
 				</form>
 			</div>
-			<div column="column-right">
+			<div class="column-right clearfix">
 				<div>
-					<img src="#">
+					<img src="img/img-sedona.jpg" alt="sedona">
 				</div>
 				<div>
-					<img src="#">
+					<img src="img/img-pink.jpg" alt="pink">
 				</div>
 				<div>
-					<img src="#">
+					<img src="img/img-barbershop.jpg" alt="barbershop">
 				</div>
 				<div>
-					<img src="#">
+					<img src="img/img-mishka.jpg" alt="mishka">
 				</div>
 				<div>
-					<img src="#">
+					<img src="img/img-aplus.jpg" alt="aplus">
 				</div>
 				<div>
-					<img src="#">
+					<img src="img/img-kvast.jpg" alt="kvast">
 				</div>
 			</div>
 			<div class="paginator-main">
 				<a href="#">1</a>
 				<a href="#">2</a>
-				<a href="#3">3</a>
-				<a href="#next">Следующая</a>
+				<a href="#">3</a>
+				<a href="#">Следующая</a>
 			</div>
 		</div>
 	</main>
-	
 	<footer>
 		<div class="container">
-			<div class="adress">
-				<section class="contacts">
+			<div class="adress-footer clearfix">
+				<div class="contacts-footer">
 					<b>Nerds disign studio</b>
-					<p>191186, Санкт-Петербург,<br>
+					<p>191186, Санкт-Петербург,
 					ул. Б. Конюшенная, д. 19/8</p>
 					<p>тел. +7(812) 275-75-75</p>
-					<a href="#">Напишите нам</a>
-				</section>
-			
-				<div>
-					<img src="#" alt="nerds">
+					<a class="btn" href="#">Напишите нам</a>
+				</div>
+				<div class="map-marker">
+					<img src="img/map-marker.png" alt="nerds">
 				</div>
 			</div>
-			<section class="social">
-				<div>VK</div>
-				<div>F</div>
-				<div>inst</div>
-			</section>
-			<div>
-				<b>Давайте дружить, это выгодно!</b>
-				<p>Скидка 10% для друзей из социальных сетей.</p>
+			<div class="social-footer">
+				<div class="social-btn">
+					<a class="social-btn" href="#">VK</a>
+					<a class="social-btn" href="#">F</a>
+					<a class="social-btn" href="#">inst</a>
+				</div>
+				<div class="social-promo">
+					<b>Давайте дружить, это выгодно!</b>
+					<p>Скидка 10% для друзей из социальных сетей.</p>
+				</div>
 			</div>
 		</div>
 	</footer>

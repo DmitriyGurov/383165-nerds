@@ -2,14 +2,17 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>нердс</title>
+	<title>HTML Academy: Нёрдс</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
 </head>
 <body>
 	<header>
 		<div class="container">
-			<div class="top-header">
+			<div class="top-header clearfix">
 				<div class="logo-header">
-					<a href="#">логотип</a>
+					<a href="#"><img src="img/nerds-logo.png" alt="logo"></a>
 				</div>
 				<nav class="nav-header">
 					<ul>
@@ -17,11 +20,9 @@
 						<li><a href="#">Клиенты</a></li>
 						<li><a href="#">Магазин</a></li>
 						<li><a href="#">Контакты</a></li>
+						<li><a href="#" class="cart-header">Корзина</a></li>
 					</ul>
 				</nav>
-				<div class="basket-header">
-					<a href="#">Корзина</a>
-				</div>
 			</div>
 			<div class="promo-header">
 				<h1>Долго, дорого, скурпулезно.</h1>
@@ -30,43 +31,42 @@
 				для вашего сайта
 				или мобильного приложения.
 				</p>
-				<a href="#">узнать больше</a>
+				<a class="btn" href="#">узнать больше</a>
 			</div>
 		</div>
 	</header>
-	
 	<main>
 		<div class="container">
-			<div class="features-main">
+			<div class="features-main clearfix">
 				<div class="features-item">
-					<img src="#" alt="item">
-					<h2>Веб-сайты</h2>
-					<p>Мир никогда не будет прежним<br>
+					<img src="img/illustration-1.jpg" alt="item">
+					<h3>Веб-сайты</h3>
+					<p>Мир никогда не будет прежним
 					после того как увидит ваш сайт!
 					</p>
-					<a href="#">заказать</a>
+					<a class="btn" href="#">заказать</a>
 				</div>
 				<div class="features-item">
-					<img src="#" alt="item">
-					<h2>Приложения</h2>
-					<p>Покорите топ-10 приложений в<br>
+					<img src="img/illustration-2.jpg" alt="item">
+					<h3>Приложения</h3>
+					<p>Покорите топ-10 приложений в
 					AppStore и Google Play
 					</p>
-					<a href="#">заказать</a>
+					<a class="btn btn-green" href="#">заказать</a>
 				</div>
 				<div class="features-item">
-					<img src="#" alt="item">
-					<h2>Презентации</h2>
-					<p>Вы даже не подозреваете<br>
+					<img src="img/illustration-3.jpg" alt="item">
+					<h3>Презентации</h3>
+					<p>Вы даже не подозреваете
 					насколько вы изумительны!
 					</p>
-					<a href="#">заказать</a>
+					<a class="btn btn-yellow" href="#">заказать</a>
 				</div>
 			</div>
-			<div class="aboutUs-main">
+			<div class="aboutUs-main clearfix">
 				<div class="aboutUs-left">
-					<h1>Мы - маленькая, но гордая<br>
-					дизайн-студия из Краснодара.</h1>
+					<h2>Мы - маленькая, но гордая
+					дизайн-студия из Краснодара.</h2>
 					<p>Исповедуем принципы минимализма и чистоты.Ставим математический
 					расчет<br>
 					превыше креатива.Работаем не покладая рук, как роботы.</p>
@@ -78,9 +78,9 @@
 					</ul>
 				</div>
 				<div class="aboutUs-right">
-					<img src="#">
-					<table>
-						<caption>С 2004 года любим точность во всем:</caption>
+					<img src="img/nerds-illustration.jpg">
+					<table class="aboutUs-table">
+						<caption><b>С 2004 года любим точность во всем:</b></caption>
 						<tr>
 							<th>146%</th>
 							<th>100%</th>
@@ -94,42 +94,41 @@
 					</table>
 				</div>
 			</div>
-			<div class="works-main">
+			<div class="works-main clearfix">
 				<div class="works-item">
-					<img src="#" alt="htmlacademy">
+					<a href="3"><img src="img/logo-1.png" alt="htmlacademy"></a>
 				</div>
 				<div class="works-item">
-					<img src="#" alt="borodinski">
+					<a href="3"><img src="img/logo-2.png" alt="borodinski"></a>
 				</div>
 				<div class="works-item">
-					<img src="#" alt="pink">
+					<a href="3"><img src="img/logo-3.png" alt="pink"></a>
 				</div>
 				<div class="works-item">
-					<img src="#" alt="mishka">
+					<a href="3"><img src="img/logo-4.png" alt="mishka"></a>
 				</div>
 			</div>
 		</div>
 	</main>
-	
 	<footer>
 		<div class="container">
-			<div class="adress-footer">
+			<div class="adress-footer clearfix">
 				<div class="contacts-footer">
 					<b>Nerds disign studio</b>
-					<p>191186, Санкт-Петербург,<br>
+					<p>191186, Санкт-Петербург,
 					ул. Б. Конюшенная, д. 19/8</p>
 					<p>тел. +7(812) 275-75-75</p>
-					<a href="#">Напишите нам</a>
+					<a class="btn" href="#">Напишите нам</a>
 				</div>
 				<div class="map-marker">
-					<img src="#" alt="nerds">
+					<img src="img/map-marker.png" alt="nerds">
 				</div>
 			</div>
 			<div class="social-footer">
 				<div class="social-btn">
-					<div>VK</div>
-					<div>F</div>
-					<div>inst</div>
+					<a class="social-btn" href="#">VK</a>
+					<a class="social-btn" href="#">F</a>
+					<a class="social-btn" href="#">inst</a>
 				</div>
 				<div class="social-promo">
 					<b>Давайте дружить, это выгодно!</b>
