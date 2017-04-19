@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
     <meta charset="utf-8">
@@ -10,20 +10,18 @@
 <body>
 	<header>
 		<div class="container">
-			<div class="top-header clearfix">
+			<nav class="nav-header clearfix">
 				<div class="logo-header">
 					<a href="#"><img src="img/nerds-logo.png" alt="logo"></a>
 				</div>
-				<nav class="nav-header">
-					<ul>
-						<li><a href="#">Студия</a></li>
-						<li><a href="#">Клиенты</a></li>
-						<li><a href="#">Магазин</a></li>
-						<li><a href="#">Контакты</a></li>
-						<li><a href="#" class="cart-header">Корзина</a></li>
-					</ul>
-				</nav>
-			</div>
+				<ul>
+					<li><a href="#">Студия</a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#" class="cart-header">Корзина</a></li>
+				</ul>
+			</nav>
 			<div class="promo-catalog">
 				<h1>Магазин готовых шаблонов</h1>
 			</div>
@@ -48,41 +46,45 @@
 						<span class="left-range"></span>
 						<span class="right-range"></span>
 					</div>
-					<b>Сетка</b>
-					<input type="radio" name="grid" value="adaptive" id="adaptive-field">
-					<label for="adaptive-field">
-						Адаптивная
-					</label>
-					<input type="radio" name="grid" value="fixed" id="fixed-field">
-					<label for="fixed-field">
-						Фиксированная
-					</label>
-					<input type="radio" name="grid" value="rubber" id="rubber-field">
-					<label for="rubber-field">
-						Резиновая
-					</label>
-					<b>Особенности</b>
-					<input type="checkbox" name="features" value="slider" id="slider-field" checked>
-					<label for="slider-field">
-						Слайдер
-					</label>
-					<input type="checkbox" name="features" value="advantage" id="advantage-field">
-					<label for="advantage-field">
-						Блок преимуществ
-					</label>	
-					<input type="checkbox" name="features" value="news" id="news-field" checked>
-					<label for="news-field">
-						Новости
-					</label>	
-					<input type="checkbox" name="features" value="gallery" id="gallery-field">
-					<label for="gallery-field">
-						Галерея
-					</label>	
-					<input type="checkbox" name="features" value="basket" id="basket-field">
-					<label for="basket-field">
-						Корзина
-					</label>	
-					<input type="submit" value="Показать">
+					<fieldset>
+						<legend>Сетка</legend>
+						<input type="radio" name="grid" value="adaptive" id="adaptive-field">
+						<label for="adaptive-field">
+							Адаптивная
+						</label>
+						<input type="radio" name="grid" value="fixed" id="fixed-field">
+						<label for="fixed-field">
+							Фиксированная
+						</label>
+						<input type="radio" name="grid" value="rubber" id="rubber-field">
+						<label for="rubber-field">
+							Резиновая
+						</label>
+					</fieldset>
+					<fieldset>
+						<legend>Особенности</legend>
+						<input type="checkbox" name="features" value="slider" id="slider-field" checked>
+						<label for="slider-field">
+							Слайдер
+						</label>
+						<input type="checkbox" name="features" value="advantage" id="advantage-field">
+						<label for="advantage-field">
+							Блок преимуществ
+						</label>	
+						<input type="checkbox" name="features" value="news" id="news-field" checked>
+						<label for="news-field">
+							Новости
+						</label>	
+						<input type="checkbox" name="features" value="gallery" id="gallery-field">
+						<label for="gallery-field">
+							Галерея
+						</label>	
+						<input type="checkbox" name="features" value="basket" id="basket-field">
+						<label for="basket-field">
+							Корзина
+						</label>				
+						<input type="submit" value="Показать">
+					</fieldset>	
 				</form>
 			</div>
 			<div class="column-right clearfix">
@@ -123,15 +125,12 @@
 					<p>тел. +7(812) 275-75-75</p>
 					<a class="btn" href="#">Напишите нам</a>
 				</div>
-				<div class="map-marker">
-					<img src="img/map-marker.png" alt="nerds">
-				</div>
 			</div>
-			<div class="social-footer">
+			<div class="social-footer clearfix">
 				<div class="social-btn">
-					<a class="social-btn" href="#">VK</a>
-					<a class="social-btn" href="#">F</a>
-					<a class="social-btn" href="#">inst</a>
+					<a class="vk" href="#"><img src="img/vk-icon.png"></a>
+					<a class="fbk" href="#"><img src="img/fb-icon.png"></a>
+					<a class="ingm" href="#"><img src="img/insta-icon.png"></a>
 				</div>
 				<div class="social-promo">
 					<b>Давайте дружить, это выгодно!</b>
