@@ -47,6 +47,7 @@ header .container {
 
 .nav-header ul {
 	float: right;
+	margin-top: 35px;
 }
 
 .nav-header li {
@@ -314,9 +315,7 @@ header .container {
 }
 
 .sort-list li {
-	display: inline-block;
-	margin: 0;
-	padding: 0;
+	float: left;
 }
 
 .sort-list a {
@@ -330,12 +329,11 @@ header .container {
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: 700;
-	margin-right: 240px;
 }
 
 .sort-list li:nth-child(3),
 .sort-list li:nth-child(4) {
-	margin-right: 30px;
+	
 }
 
 /* стили column left каталога */
@@ -352,14 +350,68 @@ header .container {
 	width: 760px;
 }
 
-.column-right div {
+.catalog-item {
+	position: relative;
 	float: left;
-	margin-right: 40px;
+	margin-right: 34px;
 	margin-bottom: 40px;
+	border: 1px solid rgba(233, 233, 233, 1);
+	box-sizing: border-box;
+	line-height: 0;
 }
 
-.column-right div:nth-child(2n) {
+.catalog-item:nth-child(2n) {
 	margin-right: 0px;
+}
+
+.item-top {
+	min-height: 40px;
+	background-color: rgba(233, 233, 233, 1);
+}
+
+.item-top ul {
+	list-style-type: none;
+	margin: 0;
+	margin-left: 10px;
+	padding: 0;
+}
+
+.item-top li {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	margin-left: 10px;
+	margin-top: 12px;
+}
+
+.item-bottom {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: rgba(238, 238, 238, 1);
+}
+
+.item-bottom .btn {
+	width: 200px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+.item-bottom b {
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 30px; 
+}
+
+.item-bottom p {
+	line-height: 18px;
+	color: #666666;
 }
 
 .paginator-main {
