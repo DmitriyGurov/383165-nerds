@@ -12,12 +12,12 @@
 		<div class="container">
 			<nav class="nav-header clearfix">
 				<div class="logo-header">
-					<a href="#"><img src="img/nerds-logo.png" alt="logo"></a>
+					<a href="index.html"><img src="img/nerds-logo.png" alt="logo"></a>
 				</div>
 				<ul>
 					<li><a href="#">Студия</a></li>
 					<li><a href="#">Клиенты</a></li>
-					<li><a href="#">Магазин</a></li>
+					<li><a href="nerds-catalog.html">Магазин</a></li>
 					<li><a href="#">Контакты</a></li>
 					<li><a href="#" class="cart-header">Корзина</a></li>
 				</ul>
@@ -28,178 +28,208 @@
 		</div>
 	</header>
 	<main>
-		<div class="container clearfix">
-			<div class="sort-nav clearfix">
-				<ul class="sort-list">
-					<li>Стоимость:</li>
-					<li>Cортировать:</li>
-					<li><a href="#">по цене</a></li>
-					<li><a href="#">по типу</a></li>
-					<li><a href="#">по названию</a></li>
-					<li><a href="#"><img src="img/sort-down.png"></a></li>
-					<li><a href="#"><img src="img/sort-down.png"></a></li>
-				</ul>
-			</div>	
+		<div class="container clearfix">	
 			<div class="column-left">
-				<form action="" method="post">
+				<b>Стоимость:</b>
+				<form class="catalog-form" action="#" method="get">
 					<div class="range">
-						<span class="left-range"></span>
-						<span class="right-range"></span>
+						<span class="left-bull bull"></span>
+						<span class="right-bull bull"></span>
 					</div>
+					<label>
+						От <input type="text" name="min" placeholder="0">
+					</label>
+					<label>
+						До <input type="text" name="max" placeholder="15 000">
+					</label>
 					<fieldset>
 						<legend>Сетка</legend>
-						<input type="radio" name="grid" value="adaptive" id="adaptive-field">
-						<label for="adaptive-field">
-							Адаптивная
-						</label>
-						<input type="radio" name="grid" value="fixed" id="fixed-field">
-						<label for="fixed-field">
-							Фиксированная
-						</label>
-						<input type="radio" name="grid" value="rubber" id="rubber-field">
-						<label for="rubber-field">
-							Резиновая
-						</label>
+						<ul>
+							<li>
+								<input type="radio" name="grid" value="adaptive" id="adaptive-field" checked>
+								<label for="adaptive-field">
+									Адаптивная
+								</label>
+							</li>
+							<li>
+								<input type="radio" name="grid" value="fixed" id="fixed-field">
+								<label for="fixed-field">
+									Фиксированная
+								</label>
+							</li>	
+							<li>
+								<input type="radio" name="grid" value="rubber" id="rubber-field">
+								<label for="rubber-field">
+									Резиновая
+								</label>
+							</li>	
+						</ul>	
 					</fieldset>
 					<fieldset>
 						<legend>Особенности</legend>
-						<input type="checkbox" name="features" value="slider" id="slider-field" checked>
-						<label for="slider-field">
-							Слайдер
-						</label>
-						<input type="checkbox" name="features" value="advantage" id="advantage-field">
-						<label for="advantage-field">
-							Блок преимуществ
-						</label>	
-						<input type="checkbox" name="features" value="news" id="news-field" checked>
-						<label for="news-field">
-							Новости
-						</label>	
-						<input type="checkbox" name="features" value="gallery" id="gallery-field">
-						<label for="gallery-field">
-							Галерея
-						</label>	
-						<input type="checkbox" name="features" value="basket" id="basket-field">
-						<label for="basket-field">
-							Корзина
-						</label>				
-						<input type="submit" value="Показать">
+						<ul>
+							<li>
+								<input type="checkbox" name="features" value="slider" id="slider-field" checked>
+								<label for="slider-field">
+									Слайдер
+								</label>
+							</li>
+							<li>	
+								<input type="checkbox" name="features" value="advantage" id="advantage-field">
+								<label for="advantage-field">
+									Блок преимуществ
+								</label>
+							</li>	
+							<li>
+								<input type="checkbox" name="features" value="news" id="news-field" checked>
+								<label for="news-field">
+									Новости
+								</label>	
+							</li>
+							<li>	
+								<input type="checkbox" name="features" value="gallery" id="gallery-field">
+								<label for="gallery-field">
+									Галерея
+								</label>
+							</li>	
+							<li>
+								<input type="checkbox" name="features" value="basket" id="basket-field">
+								<label for="basket-field">
+									Корзина
+								</label>
+							</li>		
+							<input type="submit" value="Показать">
+						</ul>
 					</fieldset>	
 				</form>
 			</div>
-			<div class="column-right clearfix">
-				<div class="catalog-item">
-					<div class="item-top">
-						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-					</div>
-					<img src="img/img-sedona.jpg" alt="sedona">
-					<div class="item-bottom">
-						<b>Sedona</b>
-						<p>
-							Информационный сайт для туристов
-						</p>
-						<a href="#" class="btn">9 900 руб.</a>
-					</div>
+			<div class="column-right">
+				<div class="sort  clearfix">
+					<b>Сортировать:</b>
+					<ul class="sort-list">
+						<li><a href="#">По цене</a></li>
+						<li><a href="#">По типу</a></li>
+						<li><a href="#">По названию</a></li>
+						<li><a class="sort-down" href="#"><img src="img/sort-down.png"></a></li>
+						<li><a class="sort-up" href="#"><img src="img/sort-down.png"></a></li>
+					</ul>
 				</div>
-				<div class="catalog-item">
-					<div class="item-top">
-						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
+				<div class="catalog-img  clearfix">
+					<div class="catalog-item">
+						<div class="item-top">
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<img src="img/img-sedona.jpg" alt="sedona">
+						<div class="item-bottom">
+							<b>Sedona</b>
+							<p>
+								Информационный сайт<br>
+								для туристов
+							</p>
+							<a href="#" class="btn">9 900 руб.</a>
+						</div>
 					</div>
-					<img src="img/img-pink.jpg" alt="pink">
-					<div class="item-bottom">
-						<b>Pink app</b>
-						<p>
-							Продуктовый лендинг
-							приложения для iOS и Android
-						</p>
-						<a href="#" class="btn">9 900 руб.</a>
+					<div class="catalog-item">
+						<div class="item-top">
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<img src="img/img-pink.jpg" alt="pink">
+						<div class="item-bottom">
+							<b>Pink app</b>
+							<p>
+								Продуктовый лендинг<br>
+								приложения для iOS и Android
+							</p>
+							<a href="#" class="btn">9 900 руб.</a>
+						</div>
 					</div>
+					<div class="catalog-item">
+						<div class="item-top">
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<img src="img/img-barbershop.jpg" alt="barbershop">
+						<div class="item-bottom">
+							<b>Barbershop</b>
+							<p>
+								Сайт салоны красоты.<br>
+								Для мужчин, да.
+							</p>
+							<a href="#" class="btn">9 900 руб.</a>
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="item-top">
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<img src="img/img-mishka.jpg" alt="mishka">
+						<div class="item-bottom">
+							<b>Mishka</b>
+							<p>
+								Интернет-магазин<br> 
+								вязаных игрушек
+							</p>
+							<a href="#" class="btn">9 900 руб.</a>
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="item-top">
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<img src="img/img-aplus.jpg" alt="aplus">
+						<div class="item-bottom">
+							<b>A plus</b>
+							<p>
+								Лендинг курсов повышения<br>
+								квалификации
+							</p>
+							<a href="#" class="btn">9 900 руб.</a>
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="item-top">
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<img src="img/img-kvast.jpg" alt="kvast">
+						<div class="item-bottom">
+							<b>Kvast</b>
+							<p>
+								Промо-сайт производителя<br>
+								крафтового кваса
+							</p>
+							<a href="#" class="btn">9 900 руб.</a>
+						</div>
+					</div>
+				</div>	
+				<div class="paginator-catalog-img">
+					<a href="#1">1</a>
+					<a href="#2">2</a>
+					<a href="#3">3</a>
+					<a href="#next" class="next">Следующая</a>
 				</div>
-				<div class="catalog-item">
-					<div class="item-top">
-						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-					</div>
-					<img src="img/img-barbershop.jpg" alt="barbershop">
-					<div class="item-bottom">
-						<b>Barbershop</b>
-						<p>
-							Сайт салоны красоты.
-							Для мужчин, да.
-						</p>
-						<a href="#" class="btn">9 900 руб.</a>
-					</div>
-				</div>
-				<div class="catalog-item">
-					<div class="item-top">
-						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-					</div>
-					<img src="img/img-mishka.jpg" alt="mishka">
-					<div class="item-bottom">
-						<b>Mishka</b>
-						<p>
-							Интернет-магазин 
-							вязаных игрушек
-						</p>
-						<a href="#" class="btn">9 900 руб.</a>
-					</div>
-				</div>
-				<div class="catalog-item">
-					<div class="item-top">
-						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-					</div>
-					<img src="img/img-aplus.jpg" alt="aplus">
-					<div class="item-bottom">
-						<b>A plus</b>
-						<p>
-							Лендинг курсов повышения квалификации
-						</p>
-						<a href="#" class="btn">9 900 руб.</a>
-					</div>
-				</div>
-				<div class="catalog-item">
-					<div class="item-top">
-						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-					</div>
-					<img src="img/img-kvast.jpg" alt="kvast">
-					<div class="item-bottom">
-						<b>Kvast</b>
-						<p>
-							Промо-сайт производителя
-							крафтового кваса
-						</p>
-						<a href="#" class="btn">9 900 руб.</a>
-					</div>
-				</div>
-			</div>
-			<div class="paginator-main">
-				<a href="#">1</a>
-				<a href="#">2</a>
-				<a href="#">3</a>
-				<a href="#">Следующая</a>
 			</div>
 		</div>
 	</main>
@@ -224,6 +254,28 @@
 					<b>Давайте дружить, это выгодно!</b>
 					<p>Скидка 10% для друзей из социальных сетей.</p>
 				</div>
+			</div>
+			<div class="footer-form">
+				<form class="write-us" action="#" method="post">
+					<fieldset>
+						<legend>Напишите нам</legend>
+						<label for="name-field">
+							<b>Ваше имя:</b>
+						</label>
+						<input type="text" name="name" id="name-field">
+						<label for="email-field">
+							<b>Ваш e-mail:</b>
+						</label>
+						<input type="email" name="email" id="email-field">
+						<label for="comment-field">
+							<b>Текст письма:</b>
+						</label>
+						<textarea name="comment" id="comment-field">
+							В свободной форме
+						</textarea>
+						<input type="submit" value="Отправить">
+					</fieldset>
+				</form>
 			</div>
 		</div>
 	</footer>

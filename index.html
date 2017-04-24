@@ -12,47 +12,61 @@
 		<div class="container">
 			<nav class="nav-header clearfix">
 				<div class="logo-header">
-					<a href="#"><img src="img/nerds-logo.png" alt="logo"></a>
+					<a href="index.html"><img src="img/nerds-logo.png" alt="logo"></a>
 				</div>
 				<ul>
 					<li><a href="#">Студия</a></li>
 					<li><a href="#">Клиенты</a></li>
-					<li><a href="#">Магазин</a></li>
+					<li><a href="nerds-catalog.html">Магазин</a></li>
 					<li><a href="#">Контакты</a></li>
 					<li><a href="#" class="cart-header">Корзина</a></li>
 				</ul>
 			</nav>
-			<div class="promo-container clearfix slide-1">
-				<div class="promo-text">
-					<h1>Долго, дорого, скурпулезно.</h1>
-					<p>
-						Математически выверенный дизайн
-						для вашего сайта
-						или мобильного приложения.
-					</p>
-					<a class="btn" href="#">узнать больше</a>
+			<div class="slider">
+				<input type="radio" id="btn-1" name="toggle" checked>
+                <input type="radio" id="btn-2" name="toggle">
+                <input type="radio" id="btn-3" name="toggle">
+				<div class="slider-controls">
+					<label for="btn-1"></label>
+                    <label for="btn-2"></label>
+                    <label for="btn-3"></label>
 				</div>
-			</div>
-			<div class="promo-container clearfix slide-2">
-				<div class="promo-text">
-					<h1>Любим математику как никто другой</h1>
-					<p>
-						Никакого креатива, только математические формулы 
-						для расчета идеальных пропорций.
-					</p>
-					<a class="btn" href="#">узнать больше</a>
+				<div class="slider-inner">
+					<div class="slider-slides">
+						<div class="promo-container clearfix slide-1">
+							<div class="promo-text">
+								<h1>Долго, дорого, скурпулезно.</h1>
+								<p>
+									Математически выверенный дизайн
+									для вашего сайта
+									или мобильного приложения.
+								</p>
+								<a class="btn" href="#">узнать больше</a>
+							</div>
+						</div>
+						<div class="promo-container clearfix slide-2">
+							<div class="promo-text">
+								<h1>Любим математику как никто другой</h1>
+								<p>
+									Никакого креатива, только математические формулы 
+									для расчета идеальных пропорций.
+								</p>
+								<a class="btn" href="#">узнать больше</a>
+							</div>
+						</div>
+						<div class="promo-container clearfix slide-3">
+							<div class="promo-text">
+								<h1>Только ночь,<br>только хардкор</h1>
+								<p>
+									Работать днем, как все? Мы против этого.
+									Ближе к полуночи работа только начинается.
+								</p>
+								<a class="btn" href="#">узнать больше</a>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="promo-container clearfix slide-3">
-				<div class="promo-text">
-					<h1>Только ночь,только хардкор</h1>
-					<p>
-						Работать днем, как все? Мы против этого.
-						Ближе к полуночи работа только начинается.
-					</p>
-					<a class="btn" href="#">узнать больше</a>
-				</div>
-			</div>
+			</div>	
 		</div>
 	</header>
 	<main>
@@ -99,21 +113,19 @@
 				</div>
 				<div class="aboutUs-right">
 					<img src="img/nerds-illustration.png">
-					<b>С 2004 года любим точность во всем:</b>
-					<ul class="aboutUs-table">
-						<li>
-							<b>146<sup>%</sup></b>
-							<span>Уровень самоотдачи</span>
-						</li>
-						<li>
-							<b>100<sup>%</sup></b>
-							<span>Соблюдение сроков</span>
-						</li>
-						<li>
-							<b>50<sup>%</sup></b>
-							<span>Минимальная предоплата</span>
-						</li>
-					</ul>
+					<div class="aboutUs-table">
+						<span class="table-caption">С 2004 года любим точность во всем:</span>
+						<ul>
+							<li><b>146<sup>%</sup></b></li>
+							<li><b>100<sup>%</sup></b></li>
+							<li><b>50<sup>%</sup></b></li>
+						</ul>
+						<ul>
+							<li>Уровень самоотдачи</li>
+							<li>Соблюдение сроков</li>
+							<li>Минимальная предоплата</li>
+						</ul>
+					</div>	
 				</div>
 			</div>
 			<div class="works-main clearfix">
@@ -155,25 +167,25 @@
 				</div>
 			</div>
 			<div class="footer-form">
-				<form>
+				<form class="write-us" action="#" method="post">
 					<fieldset>
 						<legend>Напишите нам</legend>
+						<label for="name-field">
+							<b>Ваше имя:</b>
+						</label>
+						<input type="text" name="name" id="name-field">
+						<label for="email-field">
+							<b>Ваш e-mail:</b>
+						</label>
+						<input type="email" name="email" id="email-field">
+						<label for="comment-field">
+							<b>Текст письма:</b>
+						</label>
+						<textarea name="comment" id="comment-field">
+							В свободной форме
+						</textarea>
+						<input type="submit" value="Отправить">
 					</fieldset>
-					<label for="name-field">
-						<b>Ваше имя:</b>
-					</label>
-					<input type="text" name="name" id="name-field">
-					<label for="email-field">
-						<b>Ваш e-mail:</b>
-					</label>
-					<input type="email" name="email" id="email-field">
-					<label for="comment-field">
-						<b>Текст письма:</b>
-					</label>
-					<textarea name="comment" id="comment-field">
-						В свободной форме
-					</textarea>
-					<input type="submit" value="Отправить">
 				</form>
 			</div>
 		</div>
