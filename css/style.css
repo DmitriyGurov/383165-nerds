@@ -25,6 +25,14 @@ html {
 	text-align: center;
 }
 
+.btn:hover {
+	background-color: #e74246;
+}
+
+.btn:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
 .container {
 	width: 1160px;
 	margin: 0 auto;
@@ -51,9 +59,17 @@ header .container {
 	float: left;
 }
 
+.logo-header a:hover {
+	opacity: 0.8;
+}
+
+.logo-header a:active {
+	opacity: 0.3;
+}
+
 .nav-header ul {
 	float: right;
-	margin-top: 35px;
+	margin-top: 31px;
 }
 
 .nav-header li {
@@ -66,10 +82,10 @@ header .container {
 	background-image: url("../img/cart-icon.png");
 	background-repeat: no-repeat;
 	background-position: left center;
-	margin-left: 245px;
+	margin-left: 197px;
 }
 
-.nav-header a {
+.nav-menu a {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 16px;
@@ -77,10 +93,18 @@ header .container {
 	font-weight: 500;
 }
 
+.nav-menu a:hover {
+	color: #fb565a;
+}
+
+.nav-menu a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
 .promo-text {
 	float: left;
 	width: 400px;
-	margin-top: 40px;
+	margin-top: 32px;
 }
 
 .promo-text h1 {
@@ -226,8 +250,24 @@ header .container {
 	background-color: #00ca74;
 }
 
+.btn-green:hover {
+	background-color: #00bc6c;
+}
+
+.btn-green:active {
+	background-color: #00aa62;
+}
+
 .btn-yellow {
 	background-color: #efc849;
+}
+
+.btn-yellow:hover {
+	background-color: #eab534;
+}
+
+.btn-yellow:active {
+	background-color: #e5a722;
 }
 
 /* стили aboutUS */
@@ -298,6 +338,10 @@ header .container {
 	font-size: 45px;
 }
 
+.aboutUs-table sup {
+	font-size: 30px;
+}
+
 .aboutUs-table ul:last-child {
 	line-height: 18px;
 	color: #283136;
@@ -322,9 +366,22 @@ header .container {
 	margin-right: 0;
 }
 
+.works-item a {
+	opacity: 0.2;
+}
+
+.works-item a:hover {
+	opacity: 1;
+}
+
+.works-item a:active {
+	opacity: 0.1;
+}
+
 /* стили footer */
 
 footer {
+	position: relative;
 	background-image: url("../img/map.jpg");
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -381,6 +438,20 @@ footer {
 	margin-right: 0;
 }
 
+.social-btn a:hover {
+	background-color: #e74246;
+}
+
+.social-btn a:active {
+	background-color: #d7373b;
+}
+
+.fbk:active img,
+.vk:active img,
+.ingm:active img {
+	opacity: 0.3;
+}
+
 .social-btn img {
 	position: absolute;
 	left: 50%;
@@ -407,9 +478,15 @@ footer {
 /* стили формы write us */
 
 .footer-form {
+	display: none;
+	position: absolute;
+	bottom: 180px;
+	left: 240;
+	z-index: 100;
 	width: 760px;
 	padding: 70px 100px;
 	box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.75);
+	background-color: #ffffff;
 }
 
 .footer-form fieldset {
@@ -427,6 +504,10 @@ footer {
 }
 
 /* стили нердс каталог */
+
+.nav-menu .active-menu {
+	border-bottom: 3px solid #e74246;
+}
 
 .promo-catalog {
 	width: 730px;
@@ -498,11 +579,34 @@ footer {
 	text-transform: uppercase;
 	font-size: 14px;
 	line-height: 18px;
-	color: rgba(0, 0, 0, 0.3);
+	color: #000000;
+}
+
+.sort-list a:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-list a:active {
+	color: rgba(0, 0, 0, 1);
 }
 
 .sort-up img {
 	transform: rotate(180deg);
+}
+
+.sort-up,
+.sort-down {
+	opacity: 0.2;
+}
+
+.sort-up:hover,
+.sort-down:hover {
+	opacity: 0.4;
+}
+
+.sort-up:active,
+.sort-down:active {
+	opacity: 1;
 }
 
 .catalog-item {
@@ -523,6 +627,10 @@ footer {
 	background-color: rgba(233, 233, 233, 1);
 }
 
+.catalog-item:hover .item-top {
+	background-color: #4d4d4d;
+}
+
 .item-top ul {
 	list-style-type: none;
 	margin: 0;
@@ -541,6 +649,7 @@ footer {
 }
 
 .item-bottom {
+	display: none;
 	position: absolute;
 	bottom: 0px;
 	width: 100%;
@@ -549,6 +658,10 @@ footer {
 	text-align: center;
 	vertical-align: middle;
 	background-color: rgba(238, 238, 238, 1);
+}
+
+.catalog-item:hover .item-bottom {
+	display: block;
 }
 
 .item-bottom .btn {
@@ -570,9 +683,8 @@ footer {
 .paginator-catalog-img a {
 	display: inline-block;
 	height: 50px;
-	min-width: 50px;
-	padding: 0px 10px;
-	background-color: rgba(238, 238, 238, 1);
+	padding: 0 25px;
+	background-color: #eeeeee;
 	text-align: center;
 	vertical-align: middle;
 	line-height: 50px;
@@ -582,8 +694,21 @@ footer {
 	text-transform: uppercase;
 }
 
+.paginator-catalog-img a:hover {
+	background-color: #dfdfdf;
+}
 
+.paginator-catalog-img a:active {
+	background-color: #d5d5d5;
+	box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.2);
+}
 
+.paginator-catalog-img .active-paginator {
+	background-color: #ffffff;
+	box-shadow: none;
+	border: 2px solid #eeeeee;
+	box-sizing: border-box;
+}
 
 
 
