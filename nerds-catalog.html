@@ -31,20 +31,27 @@
 		<div class="container clearfix">	
 			<div class="column-left">
 				<b>Стоимость:</b>
-				<form class="catalog-form" action="#" method="get">
-					<div class="range">
-						<span class="left-bull bull"></span>
-						<span class="right-bull bull"></span>
+				<form class="catalog-form" action="form.php" method="get">
+					<div class="range-filter">
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar" style="margin-left: 20%; width: 30%">
+								</div>
+							</div>
+							<div class="toggle toggle-min"></div>
+							<div class="toggle toggle-max"></div>	
+						</div>
+						<div class="price-controls">
+							<label class="min-price">от 
+							<input name="min-price" type="text" value="0">
+							</label>
+          					<label class="max-price">до 
+          					<input name="max-price" type="text" value="15000">
+          					</label>
+						</div>
 					</div>
-					<label>
-						От <input type="text" name="min" placeholder="0">
-					</label>
-					<label>
-						До <input type="text" name="max" placeholder="15 000">
-					</label>
-					<fieldset>
-						<legend>Сетка</legend>
-						<ul>
+						<legend>Сетка:</legend>
+						<ul class="sort-option">
 							<li>
 								<input type="radio" name="grid" value="adaptive" id="adaptive-field" checked>
 								<label for="adaptive-field">
@@ -66,8 +73,8 @@
 						</ul>	
 					</fieldset>
 					<fieldset>
-						<legend>Особенности</legend>
-						<ul>
+						<legend>Особенности:</legend>
+						<ul class="sort-option">
 							<li>
 								<input type="checkbox" name="features" value="slider" id="slider-field" checked>
 								<label for="slider-field">
