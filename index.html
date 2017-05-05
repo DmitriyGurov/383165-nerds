@@ -170,23 +170,24 @@
 			</div>
 			<div class="footer-form">
 				<form class="write-us" action="#" method="post">
+					<img class="close-form" src="img/close-cross.png">
 					<fieldset>
 						<legend>Напишите нам</legend>
 						<label for="name-field">
 							<b>Ваше имя:</b>
 						</label>
-						<input type="text" name="name" id="name-field">
+						<input type="text" name="name" id="name-field" placeholder="Представтесь пожалуйста" tabindex="1" required>
 						<label for="email-field">
 							<b>Ваш e-mail:</b>
 						</label>
-						<input type="email" name="email" id="email-field">
+						<input type="email" name="email" id="email-field" placeholder="Для отпраки ответа" tabindex="2" required>
 						<label for="comment-field">
 							<b>Текст письма:</b>
 						</label>
-						<textarea name="comment" id="comment-field">
+						<textarea name="comment" id="comment-field" rows="7" tabindex="3" required>
 							В свободной форме
 						</textarea>
-						<input type="submit" value="Отправить">
+						<input type="submit" value="Отправить" class="btn">
 					</fieldset>
 				</form>
 			</div>
