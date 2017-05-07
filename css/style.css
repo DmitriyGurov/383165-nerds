@@ -180,23 +180,23 @@ header .container {
 	display:none;
 }
 
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+.btn-1:checked ~ .slider-controls label[for="btn-1"],
+.btn-2:checked ~ .slider-controls label[for="btn-2"],
+.btn-3:checked ~ .slider-controls label[for="btn-3"] {
     background-color: #666666;
 }
 
-#btn-1:checked ~ .slider-inner .slider-slides { 
+.btn-1:checked ~ .slider-inner .slider-slides { 
     transform: translate(0px);
 	transition: 2s;
 }
 
-#btn-2:checked ~ .slider-inner .slider-slides { 
+.btn-2:checked ~ .slider-inner .slider-slides { 
     transform: translate(-1160px);
 	transition: 2s;
 }
 
-#btn-3:checked ~ .slider-inner .slider-slides { 
+.btn-3:checked ~ .slider-inner .slider-slides { 
     transform: translate(-2320px);
 	transition: 2s;
 }
