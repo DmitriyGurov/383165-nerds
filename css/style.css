@@ -229,7 +229,7 @@ header .container {
 	margin-right: 0;
 }
 
-.features-item h3 {
+.features-item h2 {
 	text-transform: uppercase;
 	font-size: 24px;
 }
@@ -279,10 +279,10 @@ header .container {
 
 .aboutUs-left {
 	float: left;
-	width: 660px;
+	width: 680px;
 }
 
-.aboutUs-left h2 {
+.aboutUs-left .aboutUs-promo {
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
