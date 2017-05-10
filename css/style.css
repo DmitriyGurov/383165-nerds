@@ -226,7 +226,7 @@ header .container {
 
 .features-main {
 	border-bottom: 2px solid #eeeeee;
-	padding-top: 80px;
+	padding-top: 82px;
 	padding-bottom: 80px;
 }
 
@@ -365,7 +365,7 @@ header .container {
 .aboutUs-table li {
 	display: table-cell;
 	padding-bottom: 30px;
-	padding-left: 5px;
+	padding-left: 10px;
 	padding-top: 5px;
 }
 
@@ -378,6 +378,10 @@ header .container {
 .aboutUs-table ul:last-child {
 	line-height: 18px;
 	color: #283136;
+}
+
+.aboutUs-table sup {
+	font-size: 30px;
 }
 
 /* стили works  */
@@ -508,7 +512,6 @@ footer .map {
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: 700;
-	
 }
 
 .social-promo p {
@@ -561,16 +564,13 @@ footer .map {
 	font-weight: 700;
 }
 
-[type="email"],
-[type="text"] {
+.footer-form [type="email"],
+.footer-form [type="text"] {
 	width: 240px;
 	margin: 50px 0;
 }
-[type="text"] {
-	margin-right: 40px;
-}
 
-textarea {
+.footer-form textarea {
 	width: 100%;
 	color: #444444;
 }
@@ -595,8 +595,8 @@ textarea {
 .promo-catalog {
 	width: 730px;
 	margin: 0 auto;
-	margin-top: 80px;
-	padding-bottom: 100px;
+	margin-top: 70px;
+	padding-bottom: 70px;
 }
 
 .promo-catalog h1 {
@@ -609,7 +609,7 @@ textarea {
 .column-left {
 	float: left;
 	width: 260px;
-	padding-top: 50px;
+	padding-top: 60px;
 }
 
 .column-left b,
@@ -623,17 +623,20 @@ textarea {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	padding-top: 8px;
 }
 
 .catalog-form fieldset {
 	border: none;
 	margin: 0;
 	padding: 0;
+	margin-top: 20px;
 } 
 
 .range-filter {
 	width: 260px;
 	margin: 50px auto; 
+	margin-bottom: 62px;
 }
 
 .range-controls {
@@ -687,6 +690,7 @@ textarea {
 	font-size: 16px;
   	display: inline-block;
   	width: 50%;
+  	text-transform: uppercase;
 }
 
 .max-price {
@@ -705,9 +709,10 @@ textarea {
   	background: #f1f1f1;
   	margin-left: 10px;
 }
+
 .sort-option li {
 	position: relative;
-	margin-top: 25px;
+	margin-top: 12px;
 	margin-left: 35px;
 	margin-bottom: 25px;
 	font-family: 'Roboto', 'Arial', sans-serif;
@@ -781,6 +786,7 @@ input[type="checkbox"]:checked + label::before {
 .sort-list-btn {
 	border: none;
 	outline: none;
+	margin-top: 20px;
 }
 
 .sort-list-btn:hover {
@@ -797,7 +803,7 @@ input[type="checkbox"]:checked + label::before {
 .column-right {
 	float: right;
 	width: 760px;
-	padding-top: 50px;
+	padding-top: 60px;
 }
 
 .sort b {
@@ -815,6 +821,19 @@ input[type="checkbox"]:checked + label::before {
 
 .sort-list li {
 	float: left;
+	margin-right: 33px;
+}
+
+.sort-list li:nth-child(1) {
+	opacity: 1;
+}
+
+.sort-list li:nth-child(2),
+.sort-list li:nth-child(3) {
+	opacity: 0.3;
+}
+
+.sort-list li:nth-child(4) {
 	margin-right: 20px;
 }
 
@@ -842,8 +861,11 @@ input[type="checkbox"]:checked + label::before {
 	transform: rotate(180deg);
 }
 
-.sort-up,
 .sort-down {
+	opacity: 1;
+}
+
+.sort-up {
 	opacity: 0.2;
 }
 
@@ -861,7 +883,7 @@ input[type="checkbox"]:checked + label::before {
 	position: relative;
 	float: left;
 	margin-right: 34px;
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 	border: 1px solid rgba(233, 233, 233, 1);
 	border-radius: 2px;
 	line-height: 0;
@@ -935,10 +957,15 @@ input[type="checkbox"]:checked + label::before {
 	color: #666666;
 }
 
+.paginator-catalog-img {
+	margin-top: 15px;
+	margin-bottom: -10px;
+}
+
 .paginator-catalog-img a {
 	display: inline-block;
 	height: 50px;
-	padding: 0 25px;
+	padding: 0 20px;
 	background-color: #eeeeee;
 	text-align: center;
 	vertical-align: middle;
@@ -947,6 +974,11 @@ input[type="checkbox"]:checked + label::before {
 	color: #000000;
 	font-weight: 500;
 	text-transform: uppercase;
+	margin-right: 10px;
+}
+
+.paginator-catalog-img a:last-child {
+	padding: 0 75px;
 }
 
 .paginator-catalog-img a:hover {
@@ -961,13 +993,6 @@ input[type="checkbox"]:checked + label::before {
 .paginator-catalog-img .active-paginator {
 	background-color: #ffffff;
 	box-shadow: none;
-	border: 2px solid #eeeeee;
+	border: 3px solid #eeeeee;
 	box-sizing: border-box;
 }
-
-
-
-
-
-
-
