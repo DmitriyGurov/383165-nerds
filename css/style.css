@@ -1064,3 +1064,9 @@ input[type="checkbox"]:checked + label::before {
 	box-shadow: none;
 	border: 3px solid #eeeeee;
 }
+
+.catalog-item:last-child,
+.catalog-item:nth-last-child(2) {
+	margin-top: -5px;
+	margin-bottom: 39px;
+}
