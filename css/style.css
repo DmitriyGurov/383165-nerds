@@ -175,11 +175,11 @@ html {
 }
 
 .slider-controls label {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    margin-left: 12px;
-    cursor: pointer;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-left: 12px;
+	cursor: pointer;
 	border-radius: 50%;
 	background-color: #ffffff;
 }
@@ -191,23 +191,23 @@ html {
 .btn-1:checked ~ .slider-controls label[for="btn-1"],
 .btn-2:checked ~ .slider-controls label[for="btn-2"],
 .btn-3:checked ~ .slider-controls label[for="btn-3"] {
-    background-image: url("../img/active.png");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+	background-image: url("../img/active.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
 
 .btn-1:checked ~ .slider-inner .slider-slides { 
-    transform: translate(0px);
+	transform: translate(0px);
 	transition: 2s;
 }
 
 .btn-2:checked ~ .slider-inner .slider-slides { 
-    transform: translate(-1160px);
+	transform: translate(-1160px);
 	transition: 2s;
 }
 
 .btn-3:checked ~ .slider-inner .slider-slides { 
-    transform: translate(-2320px);
+	transform: translate(-2320px);
 	transition: 2s;
 }
 
@@ -313,8 +313,8 @@ html {
 	width: 25px;
 	height: 6px;
 	margin-right: 10px;
-    background-image: url("../img/line-red.png");
-    background-repeat: no-repeat;
+	background-image: url("../img/line-red.png");
+	background-repeat: no-repeat;
 }
 
 .aboutUs-left p,
@@ -580,10 +580,15 @@ html {
 	background-color: #ffffff;
 }
 
+.footer-form-show {
+	display: block;
+}
+
 .close-form {
 	position: absolute;
 	right: 100px;
 	top: 80px;
+	cursor: pointer;
 }
 
 .footer-form input,
@@ -685,7 +690,7 @@ html {
 	position: relative;
 	height: 41px;
 	padding-right: 20px;
-  	padding-left: 20px;
+	padding-left: 20px;
 	border-radius: 5px;
 	background: #f1f1f1;
 	margin-bottom: 15px;
@@ -693,8 +698,8 @@ html {
 }
 
 .range-controls .scale {
-  	height: 2px;
-  	background: #d7dcde;
+	height: 2px;
+	background: #d7dcde;
 }
 
 .range-controls .bar {
@@ -705,8 +710,8 @@ html {
 
 .range-controls .toggle {
 	position: absolute;
-  	top: 30px;
-  	left: 0px;
+	top: 30px;
+	left: 0px;
 	width: 4px;
 	height: 4px;
 	border: 8px solid #fff;
@@ -717,26 +722,26 @@ html {
 }
 
 .range-controls .toggle-min {
-  	left: 18px;
+	left: 18px;
 }
 
 .range-controls .toggle-max {
-  	left: 159px;
+	left: 159px;
 }
 
 .price-controls {
-  	font-size: 0;
+	font-size: 0;
 }
 
 .price-controls label {
 	font-size: 16px;
-  	display: inline-block;
-  	width: 50%;
-  	text-transform: uppercase;
+	display: inline-block;
+	width: 50%;
+	text-transform: uppercase;
 }
 
 .max-price {
-  	text-align: right;
+	text-align: right;
 }
 
 .price-controls input {
@@ -745,11 +750,11 @@ html {
 	text-align: center;
 	color: #283136;
 	width: 60px;
-  	padding: 9px 9px;
-  	border: none;
-  	border-radius: 5px;
-  	background: #f1f1f1;
-  	margin-left: 10px;
+	padding: 9px 9px;
+	border: none;
+	border-radius: 5px;
+	background: #f1f1f1;
+	margin-left: 10px;
 }
 
 .sort-option li {
@@ -769,8 +774,8 @@ input[type="checkbox"] {
 
 input[type="checkbox"] + label, 
 input[type="radio"] + label {
-  	color: #283136;
-  	cursor: pointer;
+	color: #283136;
+	cursor: pointer;
 }
 
 input[type="checkbox"] + label::before, 
@@ -782,8 +787,8 @@ input[type="radio"] + label::before {
 	display: inline-block;
 	width: 25px;
 	height: 25px;
-    background-image: url("../img/spritesheet.png");
-    background-repeat: no-repeat;
+	background-image: url("../img/spritesheet.png");
+	background-repeat: no-repeat;
 }
 
 input[type="checkbox"] + label::before {
