@@ -153,11 +153,7 @@
 		</div>
 	</main>
 	<footer class="footer-main">
-		<div class="map js-open-map">
-			<div class="modal-map">
-				<img class="modal-map-close" src="img/close-cross.png" width="21" height="21" >
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.717135187791!2d30.323236429878055!3d59.93922865597382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1494870836638" width="900" height="700" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
+		<div class="map">
 			<div class="container">
 				<div class="adress-footer clearfix">
 					<div class="contacts-footer">
@@ -186,25 +182,36 @@
 			</div>
 			<div class="footer-form">
 				<form class="write-us" action="#" method="post">
-					<button class="form-modal-close">
+					<a hrf="#" class="form-modal-close">
 						<img class="close-form" src="img/close-cross.png" alt="closeform" width="21" height="21">
-					</button>
+					</a>
 					<fieldset>
 						<legend>Напишите нам</legend>
-						<label for="name-field">
-							<b>Ваше имя:</b>
-						</label>
-						<input type="text" name="name" id="name-field" placeholder="Представтесь пожалуйста" tabindex="1" required>
-						<label for="email-field">
-							<b>Ваш e-mail:</b>
-						</label>
-						<input type="email" name="email" id="email-field" placeholder="Для отпраки ответа" tabindex="2" required>
-						<label for="comment-field">
-							<b>Текст письма:</b>
-						</label>
-						<textarea name="comment" id="comment-field" rows="7" tabindex="3" required>
-							В свободной форме
-						</textarea>
+						<div class="name-left">
+							<label for="name-field">
+								<b>Ваше имя:</b>
+							</label>
+							<p>
+								<input type="text" name="name" id="name-field" placeholder="Представьтесь пожалуйста" tabindex="1" required>
+							</p>
+						</div>
+						<div class="email-right">
+							<label for="email-field">
+								<b>Ваш e-mail:</b>
+							</label>
+							<p>
+								<input type="email" name="email" id="email-field" placeholder="Для отправки ответа" tabindex="2" required>
+							</p>
+						</div>
+						<div class="comment-down">
+							<label for="comment-field">
+								<b>Текст письма:</b>
+							</label>
+							<p>
+								<textarea name="comment" id="comment-field" rows="5" tabindex="3" required>В свободной форме
+								</textarea>
+							</p>
+						</div>
 						<input type="submit" value="Отправить" class="btn">
 					</fieldset>
 				</form>

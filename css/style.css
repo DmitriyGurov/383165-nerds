@@ -598,13 +598,20 @@ html {
 .footer-form {
 	display: none;
 	position: absolute;
-	bottom: 180px;
-	left: 240;
+	left: 119px;
+	top: -137px;
 	z-index: 100;
 	width: 760px;
-	padding: 70px 100px;
+	padding: 65px 85px;
+	padding-right: 117px;
+	padding-bottom: 80px;
 	box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.75);
 	background-color: #ffffff;
+}
+
+.footer-form p {
+	margin-bottom: 33px;
+	margin-top: 10px;
 }
 
 .footer-form-show {
@@ -616,11 +623,46 @@ html {
 	animation: shake 0.6s;
 }
 
-.close-form {
+.form-modal-close {
 	position: absolute;
-	right: 100px;
-	top: 80px;
+	right: 90px;
+	top: 78px;
 	cursor: pointer;
+}
+
+.write-us legend {
+	margin-bottom: 32px;
+}
+
+.form-modal-close .close-form {
+	opacity: 0.3;
+}
+
+.form-modal-close .close-form:hover {
+	opacity: 1;
+}
+
+.form-modal-close .close-form:active {
+	opacity: 0.1;
+}
+
+.name-left {
+	float: left;
+}
+
+.email-right {
+	float: right;
+}
+
+.comment-down {
+	clear: both;
+}
+
+.footer-form input {
+	width: 332px;
+	height: 44px;
+	padding-left: 13px;
+	padding-right: 13px;
 }
 
 .footer-form input,
@@ -632,6 +674,12 @@ html {
 .footer-form input:hover,
 .footer-form textarea:hover {
 	border: 2px solid #b4b9bb;
+}
+
+.footer-form input:focus,
+.footer-form textarea:focus {
+	outline: none;
+	border: 2px solid #000000;
 }
 
 .footer-form fieldset {
@@ -649,8 +697,42 @@ html {
 }
 
 .footer-form textarea {
-	width: 100%;
-	color: #444444;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	width: 730px;
+	color: rgba(68, 68, 68, 0.5);
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+}
+
+::-webkit-input-placeholder { 
+	color: rgba(68, 68, 68, 0.5); 
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+::-moz-placeholder { 
+	color: rgba(68, 68, 68, 0.5);
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+:-moz-placeholder { 
+	color: rgba(68, 68, 68, 0.5); 
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+:-ms-input-placeholder { 
+	color: rgba(68, 68, 68, 0.5); 
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 18px;
 }
 
 .footer-form .btn {
@@ -661,6 +743,11 @@ html {
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
+}
+
+.footer-form input[type="submit"] {
+	outline: none;
+	border: none;
 }
 
 /* стили нердс каталог */
@@ -1106,28 +1193,4 @@ input[type="checkbox"]:checked + label::before {
 .catalog-item:nth-last-child(2) {
 	margin-top: -5px;
 	margin-bottom: 39px;
-}
-
-.map {
-	position: relative;
-}
-
-.modal-map {
-	display: none;
-	position: absolute;
-	top: -100px;
-	left: 400px;
-}
-
-.modal-map-show {
-	display: block;
-}
-
-.modal-map-close {
-	position: absolute;
-	top: -25px;
-	right: 0px;
-	width: 25px;
-	height: 25px;
-	cursor: pointer;
 }
